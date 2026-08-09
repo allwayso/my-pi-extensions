@@ -1,0 +1,41 @@
+{
+  "name": "@allwayso/pi-tetris",
+  "version": "1.0.0",
+  "description": "Tetris game extension for pi-coding-agent",
+  "license": "MIT",
+  "author": "Shown Lin",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^0.84.1",
+    "@earendil-works/pi-tui": "^0.84.1",
+    "typescript": "^5.4.0"
+  },
+  "keywords": [
+    "tetris",
+    "pi-extension",
+    "pi-coding-agent",
+    "tui",
+    "game",
+    "pi-package"
+  ],
+  "pi": {
+    "extensions": ["./dist/index.js"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/allwayso/my-pi-extensions.git"
+  }
+}
