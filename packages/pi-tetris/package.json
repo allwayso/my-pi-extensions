@@ -33,7 +33,8 @@
     "pi-package"
   ],
   "pi": {
-    "extensions": ["./dist/index.js"]
+    "extensions": ["./dist/index.js"],
+    "image": "https://raw.githubusercontent.com/allwayso/my-pi-extensions/main/packages/pi-tetris/image.png"
   },
   "repository": {
     "type": "git",
